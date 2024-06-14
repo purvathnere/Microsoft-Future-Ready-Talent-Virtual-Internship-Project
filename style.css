@@ -1,0 +1,902 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Pacifico&family=Poppins:wght@400;500;600;700&family=Prompt&family=Ubuntu:ital,wght@0,500;0,700;1,500;1,700&family=Varela&family=Varela+Round&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Poppins:wght@400;500;600;700&family=Prompt&family=Ubuntu:wght@300&family=Varela&family=Varela+Round&display=swap');
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background:url(th);
+    font-family: "Poppins",sans-serif;
+  }
+  
+  /* Header Styles */
+  #top-header {
+    background-color:wheat;
+    color: #fff;
+    padding: 10px 0;
+  }
+  /* people university*/
+  .pu
+  {
+    color:black;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .phoneno{
+    color:black;
+  }
+ 
+    #clock {
+      width: 100px; /* Width of the clock */
+      height: 100px; /* Height of the clock */
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute; 
+      top: 40px; 
+      right: 20px;
+      transform: translate(20px, -20px); 
+    }
+    
+  
+  
+  .logo11{
+    width:100px;
+    height:100px;
+   
+  }
+  #et-info {
+    float: left;
+  }
+  
+  #et-info-phone {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  
+  #et-info-email {
+    font-size: 16px;
+  }
+  
+  #et-secondary-menu {
+    float: right;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-right: 60px;;
+   text-align: center;
+
+
+  }
+  
+  #et-secondary-nav {
+    list-style: none;
+  }
+  
+  #et-secondary-nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  #et-secondary-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  #et-secondary-nav .menu-item a:hover {
+    color: blueviolet !important;
+  }
+  
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    #et-info {
+      float: none;
+      margin-bottom: 10px;
+    }
+  
+    #et-secondary-menu {
+      float: none;
+      text-align: center;
+    }
+  
+    #et-secondary-nav li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  html{
+    scroll-behavior: smooth;
+   }
+   body{
+    --c1---1--:#ffffff
+    --c1---2--:#636262
+    --c1---3--:linear-gradient
+  
+    --c1---4--:#000000;
+    --c1---5--:#f6f9fe;
+    background:var(--c1---1--);
+    margin:0;
+  
+   }h1,
+h2,h3,
+h4,h5,
+h6{
+  margin:0;
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+  transition:0.3s ease-in-out ;
+ -webkit-transition:0.3s ease-in-out ;
+  -moz-transition:0.3s ease-in-out ;
+  -ms-transition:0.3s ease-in-out ;
+  -o-transition:0.3s ease-in-out ;
+}
+img{
+  max-width: 90%;
+  width:90%
+}
+
+ul
+{
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+.row{
+  display: flex;
+}
+.flex{
+  align-items: center;
+  flex-wrap: wrap;
+  gap:clamp(2em,5vw,5em);
+}
+.flex>*{
+  flex: 1 1 25em;
+}
+.column{
+  display:grid;
+}
+.container{
+  max-width: 90%;
+  margin:0 auto;
+}
+header{
+  align-items: center;
+  justify-content: space-between;
+  gap:2em;
+  padding: 2em 0;
+}
+nav ul{
+  align-items: center;
+  gap:2em;
+}
+nav a {
+  font-size:16px;
+  color:var(--c1---2--);
+}
+nav a:hover{
+color:#201c98;
+}
+.toggleContact.c-active::after{
+  content : "";
+  position:fixed;
+  top:5%;
+  right:5%;
+  background-image: url(close.jpg);
+  background-repeat: no-repeat;
+  background-position : center;
+  background-size: 20px;
+  width:20px;
+  height: 20px;
+  z-index: 10;
+
+}
+
+.contactMenu{
+  position: absolute;
+  inset : 0;
+  margin:auto;
+  min-height: 0;
+  opacity: 0;
+  background: rgba(0,0,0,0.3);
+  padding:4em 0;
+  transform:scale(0);
+  -webkit-transform:scale(0);
+  -moz-transform:scale(0);
+  -ms-transform:scale(0);
+  -o-transform:scale(0);
+}
+
+.contactMenu.c-active{
+  position: fixed;
+  min-height: 100vh;
+  opacity: 1;
+  transform:scale(1);
+  -webkit-transform:scale(1);
+  -moz-transform:scale(1);
+  -ms-transform:scale(1);
+  -o-transform:scale(1);
+  z-index:9;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height:80px;
+  width: 800px;
+  padding: 10px;
+  margin: 0;
+  background-color: rgb(18, 18, 62);
+}
+nav ul{
+  display: flex;
+  justify-content: center;
+}
+nav ul li{
+  list-style-type: none;
+  margin :0 23px;
+}
+nav ul li a{
+ text-decoration: none;
+ color:white;
+}
+nav ul li a:hover{
+ color:rgb(153,153,226);
+ font-size: 1.04rem;
+}
+
+
+
+/* Styling for the appointment form */
+.contactMenu {
+  margin-top: 30px;
+}
+
+.contactMenu-content {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactMenu-content h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Styling for the appointment link */
+.appointment-link {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #3498db;
+}
+
+/* Hide the appointment form by default */
+.contactMenu-content {
+  display: none;
+}
+
+/* Show the appointment form when the link is clicked */
+.show-form .contactMenu-content {
+  display: block;
+}
+.colored-box {
+  background-color:lime;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 900;
+  font-size: 24px;
+  color:#333;
+}
+
+.quote {
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+
+
+  /*
+marquee {
+  font-size: 24px;
+  color: red;
+  padding: 10px;
+  border: 2px solid :red;
+  border-radius: 5px;
+}
+*/
+
+
+
+
+.first {
+  display: flex;
+}
+
+.full {
+  flex: 1;
+  background-color: lightgreen; /* Replace with your preferred background color */
+  padding: 50px;
+   /* Add padding to create space around the content */
+   margin: 5px;
+  
+}
+
+
+  .icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url('teeth.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+  .logo0{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-top: 2px;;
+    background-image: url('teeth.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+
+
+
+/*
+  .frame
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 20rem 20rem;
+    background: url(tt.jpg);
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .text11 {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .text11 h2 {
+    font-size: 24px;
+  }
+  .image11 {
+    flex: 1;
+    text-align: right;
+ 
+    
+  }
+  
+ 
+  */
+  .frame {
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background: url(tt.jpg);
+}
+
+.text11 {
+    width: 50%;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.logo0 {
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.image11 {
+    width: 50%;
+    text-align: right;
+}
+
+h2 {
+    font-size: 24px;
+    color: red;
+}
+
+    
+
+  img {
+    max-width: 100%;
+ height:auto;
+
+
+  }
+  
+  
+ 
+h4 {
+    text-align: center;
+    color: #333;
+}
+
+
+
+
+
+.appointment-container {
+    text-align: right;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    z-index: 2;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 500px; /* Adjust the maximum width as needed */
+}
+
+.appointment-container h1 {
+    color:crimson;
+    font-weight: 800px;
+}
+
+.appointment-container label {
+    display: block;
+    margin-top: 10px;
+}
+/* Align form elements to the left within the appointment container */
+
+/* Adjust the alignment of form labels */
+.appointment-container label {
+    text-align: left; /* Align label text to the left */
+}
+
+
+/* Adjust input and select elements to the left */
+.appointment-container input[type="text"],
+.appointment-container input[type="email"],
+.appointment-container input[type="tel"],
+.appointment-container input[type="date"],
+.appointment-container input[type="time"],
+.appointment-container select {
+
+  
+   
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: left; /* Align input text to the left */
+}
+
+
+.appointment-container input[type="text"],
+.appointment-container input[type="email"],
+.appointment-container input[type="tel"],
+.appointment-container input[type="date"],
+.appointment-container input[type="time"],
+.appointment-container select {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.appointment-container button[type="submit"] {
+    background-color: #007BFF;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.appointment-container button[type="submit"]:hover {
+    background-color: green;
+}
+
+/* Styling for the confirmation message */
+.confirmation {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    z-index: 2;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 400px; /* Adjust the maximum width as needed */
+}
+
+.confirmation h2 {
+    color: #fff;
+}
+
+.confirmation p {
+    color: #fff;
+}
+
+/* Styling for the close icon in the "Book an Appointment" container */
+.appointment-container .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #333; /* Change to the color you prefer for the close icon */
+    cursor: pointer;
+}
+
+/* Style the close icon when hovered */
+.appointment-container .close:hover {
+    color: #ff5733; /* Change to the color you prefer when hovered */
+}
+
+/* Styling for the close icon in the confirmation message */
+.confirmation .close {
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Style the close icon when hovered */
+.confirmation .close:hover {
+    color: #ff5733; /* Change to the color you prefer when hovered */
+}
+
+#specialText {
+    font-family: "Ubuntu", sans-serif;
+   font-weight: bold;
+}
+.frame2 {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 30rem 30rem;
+  background-color:antiquewhite;
+  padding: 100px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.frame2 {
+  
+}
+span1{
+  color:darkorange;
+}
+.decorative-line {
+  width: 100%;
+  height: 10px; 
+  background: linear-gradient(to right, darkmagenta, transparent);
+  border: none; 
+  margin: 20px 0; 
+}
+
+h4 {
+  text-align: center; 
+  color: rgb(139, 0, 39);
+}
+
+
+
+
+
+
+
+
+
+
+.call-now-box {
+  background-color: green; /* Set the background color to green */
+  padding: 13px 30px; /* Add some padding to create space around the content */
+  text-align: center; /* Center the content horizontally */
+  color: antiquewhite; /* Set the text color to white or a color that's visible on green */
+  border-radius: 30px;
+  font-weight: bold;
+  transition: .4s;
+  border: 2px solid transparent;
+  text-decoration: none;
+  border-radius: 30px;
+transition: .4s;
+
+
+}
+
+
+
+
+
+
+
+
+.call-button {
+  
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Button background color */
+  color: black; /* Button text color */
+  text-decoration: none; /* Remove underline from the link */
+  border: none;
+  border-radius: 5px;
+  font-weight: bold; /* Make the button text bold if desired */
+  opacity: 0.8;
+ 
+}
+
+.call-now-box:hover {
+  background-color: transparent;
+  border: 2px solid green;
+  cursor: pointer;
+}
+
+.phone-number a {
+  color: black; /* Set the phone number link color to black */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* Style for the content inside the frame */
+.content {
+  /* Allow content to expand and fill available space */
+/* Add padding for spacing inside the content */
+padding:140px;
+}
+
+/* Style for the image on the right */
+.frame-image {
+  max-width: 50%;
+   /* Limit the width of the image */
+   
+}
+
+
+
+
+.frame3 {
+  
+
+   background:url(white.jpg);
+   background-size: 100% ;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height:900px;
+ 
+  max-width: 30rem 30rem;
+  background-color:antiquewhite;
+  padding: 100px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.frame4 {
+  
+
+
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ width: 100%;
+ max-width: 30rem 30rem;
+ background-color:antiquewhite;
+ padding: 100px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.frame4 {
+  
+
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 30rem 30rem;
+  background-color:white;
+  padding: 120px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ }
+ /*
+ .frame5 {
+  
+
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 30rem 30rem;
+  background-color:white;
+
+  padding: 120px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ }*/
+
+.red-link {
+  color: red; /* Text color */
+  text-decoration: none; /* Remove underline from the link */
+  font-size: 40px; /* Adjust font size */
+  font-weight: bold; /* Make the text bold */
+  display: inline-block; /* Add this to make the whole area clickable */
+  padding: 10px; /* Add padding for touch-friendly interaction */
+  border-radius: 10px; /* Rounded corners for the link */
+  cursor: pointer; /* Change cursor on hover to indicate interactivity */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+.red-link:hover {
+  background-color:khaki; /* Brighter background color on hover */
+  color: #333; /* Darker text color on hover */
+}
+
+.arrow {
+  margin-left: 5px; /* Add some spacing between the text and arrow icon */
+}
+
+
+.frame5 {
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.contact-section {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-details {
+  margin-bottom: 20px;
+}
+
+.contact-details p {
+  color: #555;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icon {
+  margin-right: 10px;
+  font-size: 24px;
+  color:rgba(228, 64, 95) ;/* Adjust the color as needed */
+  text-decoration: none;
+}
+
+
+
+form {
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #0077b5; /* Button background color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: red; /* Button background color on hover */
+}
+
+footer {
+  text-align: center;
+  color:black;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+footer p {
+  margin-top: 5px;
+}
+.qr{
+  width:90px;
+  height:90px;
+}
+
+
+ 
+ 
